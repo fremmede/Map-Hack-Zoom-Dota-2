@@ -7,9 +7,13 @@ Script to change the resolution in the game Dota 2
 * This is **prohibited** in proffesional dota 2 games.
 
 ## Set-up
-- You need to have [**Python 2.7.2**](https://www.python.org/downloads/release/python-272/?target=_blank) installed [**x86**](https://www.python.org/ftp/python/2.7.2/python-2.7.2.msi) | [**x64**](https://www.python.org/ftp/python/2.7.2/python-2.7.2.amd64.msi).
-> Paste
+- You need to have [**Python 2.7.2**](https://www.python.org/downloads/release/python-272/?target=_blank) installed [**x32**](https://www.python.org/ftp/python/2.7.2/python-2.7.2.msi) | [**x64**](https://www.python.org/ftp/python/2.7.2/python-2.7.2.amd64.msi).
+> Paste 32 or 64
+- \Steam\steamapps\common\dota 2 beta\game\dota\bin\win64
 - To run - open any **.py** file.
+
+> Optional
+- Create desktop shortcut
 
 <h2>ZoomCamv1.py  <img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/python/python.png" width="30px"> 
 </h2>
