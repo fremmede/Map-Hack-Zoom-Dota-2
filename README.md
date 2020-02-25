@@ -13,6 +13,8 @@ Script to change the resolution in the game Dota 2
 - To run - open any **.py** file.
 
 <img src="https://i.imgur.com/HSj497i.png" alt="Zoom Cam" width="700px"/>
+
+
 > Optional
 - Create desktop shortcut
 
