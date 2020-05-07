@@ -43,6 +43,3 @@ def edit():
       print c
 
 edit()
-
-
-
