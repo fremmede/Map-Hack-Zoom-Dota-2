@@ -6,16 +6,16 @@ with open(filename, mode='rb') as s:
 
 
 with open(filename, mode='rb') as r:
-    strings = re.findall('Maximum visible distance\x00\x00\x00\x00\d{4}', r.read())
-    c = ''.join(strings)[28:32]
+    strings = re.findall('\d{4}\x00\x00\x00\x00\x00\x00\x00\x00r_propsmaxdist', r.read())
+    c = ''.join(strings)[0:4]
     print "Your size =", c
 
 
 def complete():
   with open(filename, mode='wb') as outfile:
     for line in d:
-      res = re.compile('Maximum visible distance\x00\x00\x00\x00\d{4}')
-      cam = res.sub('Maximum visible distance\x00\x00\x00\x00'+ (str(x)), line)
+      res = re.compile('\d{4}\x00\x00\x00\x00\x00\x00\x00\x00r_propsmaxdist')
+      cam = res.sub((str(x)) +'\x00\x00\x00\x00\x00\x00\x00\x00r_propsmaxdist', line)
       outfile.write(cam)
 
 print "Type 4-digits number"
@@ -31,3 +31,7 @@ while True:
       print "Only 4-digit numbers"
   except ValueError:
     print "No words, only numbers"
+
+
+
+
