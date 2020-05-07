@@ -6,8 +6,8 @@ filename = "client.dll"
 
 def find_fuc():
   with open(filename, mode='rb') as r:
-      strings = re.findall('Maximum visible distance\x00\x00\x00\x00\d{4}', r.read())
-      def_cam = ''.join(strings)[28:32]
+      strings = re.findall('\d{4}\x00\x00\x00\x00\x00\x00\x00\x00r_propsmaxdist', r.read())
+      def_cam = ''.join(strings)[0:4]
       return def_cam
 
 
@@ -16,8 +16,8 @@ def changer_cam():
   with open (filename, mode ='rb') as s:
     file_read = s.read() 
   with open(filename, mode='rb+') as outfile:
-    res = re.compile('Maximum visible distance\x00\x00\x00\x00\d{4}')
-    cam = res.sub('Maximum visible distance\x00\x00\x00\x00'+ (str(num_cam)), file_read)
+    res = re.compile('\d{4}\x00\x00\x00\x00\x00\x00\x00\x00r_propsmaxdist')
+    cam = res.sub((str(num_cam)) +'\x00\x00\x00\x00\x00\x00\x00\x00r_propsmaxdist', file_read)
     outfile.write(cam)
 
 
