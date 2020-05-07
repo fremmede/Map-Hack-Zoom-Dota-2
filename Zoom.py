@@ -31,7 +31,3 @@ while True:
       print "Only 4-digit numbers"
   except ValueError:
     print "No words, only numbers"
-
-
-
-
