@@ -18,7 +18,7 @@ Script to change the resolution in the game Dota 2
 > Optional
 - Create desktop shortcut
 
-<h2>ZoomCamv1.py  <img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/python/python.png" width="30px"> 
+<h2>Zoom-64.py  <img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/python/python.png" width="30px"> 
 </h2>
   
 #### Type 4-digits number
