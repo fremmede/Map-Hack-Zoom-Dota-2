@@ -6,7 +6,7 @@ with open(lib, mode='rb') as s:
 
 
 with open(lib, mode='rb') as r:
-    strings = re.findall('\d{4}\x00\x00\x00\x00\x00\x00\x00\x00r_propsmaxdist', r.read())
+    strings = re.findall('\d{4}\x00\x00\x00\x00\x00\x00\x00\x00CPointHMDAnchorOverride', r.read())
     c = ''.join(strings)[0:4]
     print "Your size =", c
 
@@ -14,8 +14,8 @@ with open(lib, mode='rb') as r:
 def complete():
   with open(lib, mode='wb') as outfile:
     for line in d:
-      res = re.compile('\d{4}\x00\x00\x00\x00\x00\x00\x00\x00r_propsmaxdist')
-      cam = res.sub((str(x)) +'\x00\x00\x00\x00\x00\x00\x00\x00r_propsmaxdist', line)
+      res = re.compile('\d{4}\x00\x00\x00\x00\x00\x00\x00\x00CPointHMDAnchorOverride')
+      cam = res.sub((str(x)) +'\x00\x00\x00\x00\x00\x00\x00\x00CPointHMDAnchorOverride', line)
       outfile.write(cam)
 
 print "Type 4-digits number"
