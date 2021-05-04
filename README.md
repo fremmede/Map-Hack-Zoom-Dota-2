@@ -28,4 +28,5 @@ Script to change the resolution in the game Dota 2
 
 
 ## social networks
->[**FanPage**](https://www.facebook.com/MapHackZoomDota2/)  | Request update
+>[**FanPage**](https://www.facebook.com/MapHackZoomDota2/)  | [**Dota Trade**](https://steamcommunity.com/tradeoffer/new/?partner=205345788&token=H0FLkfuC)
+Request update
